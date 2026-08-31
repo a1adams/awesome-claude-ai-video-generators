@@ -1,0 +1,264 @@
+{
+  "keyword": "claude ai video generator",
+  "title": "Best Claude AI Video Generator Tools (2026)",
+  "lastChecked": "2026-08-31",
+  "capabilityChecks": [
+    {
+      "key": "firstPartyMcp",
+      "label": "First-party MCP"
+    },
+    {
+      "key": "restApi",
+      "label": "REST API"
+    },
+    {
+      "key": "timelineEditing",
+      "label": "Timeline editing"
+    },
+    {
+      "key": "multiShotAssembly",
+      "label": "Multi-shot assembly"
+    },
+    {
+      "key": "costVisibility",
+      "label": "Cost visibility"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "Best Overall",
+      "homepage": "https://www.wireflow.ai",
+      "docs": "https://www.wireflow.ai/docs/mcp",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": "First-party hosted MCP (Streamable HTTP, OAuth)",
+      "restApi": true,
+      "modelSupport": "Multi-model catalog across image, video and audio nodes",
+      "freeTier": "yes",
+      "repo": null,
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Add the hosted MCP server to Claude Code, then approve the OAuth consent screen:",
+          "lang": "bash",
+          "code": "claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp"
+        },
+        {
+          "label": "In Claude Desktop or claude.ai, add the same URL as a custom connector. Read-only tools (`list_workflows`, `list_models`, `get_execution`) cost nothing; `run_workflow` is the only one that spends credits.",
+          "lang": "text",
+          "code": "https://www.wireflow.ai/api/mcp"
+        }
+      ],
+      "capabilities": {
+        "firstPartyMcp": true,
+        "restApi": true,
+        "timelineEditing": true,
+        "multiShotAssembly": true,
+        "costVisibility": true
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Higgsfield",
+      "tagline": "MCP connector fronting 30 plus video models, clip generation only",
+      "homepage": "https://higgsfield.ai",
+      "docs": "https://github.com/higgsfield-ai/cli#quickstart",
+      "pricing": "https://higgsfield.ai/pricing",
+      "claudeConnection": "First-party hosted MCP connector, plus an official CLI",
+      "restApi": false,
+      "modelSupport": "40+ models per the official CLI README",
+      "freeTier": "unverified",
+      "repo": "higgsfield-ai/cli",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Install the official CLI, authenticate, and generate:",
+          "lang": "bash",
+          "code": "npm install -g @higgsfield/cli\nhiggsfield auth login\nhiggsfield generate create nano_banana_2 --prompt \"a quiet beach at sunrise\" --wait"
+        },
+        {
+          "label": "For Claude itself, add the connector URL in Settings → Connectors:",
+          "lang": "text",
+          "code": "https://mcp.higgsfield.ai"
+        }
+      ],
+      "capabilities": {
+        "firstPartyMcp": true,
+        "restApi": false,
+        "timelineEditing": false,
+        "multiShotAssembly": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": 477,
+        "lastPush": "2026-08-29T03:26:27Z",
+        "latestRelease": "v1.1.24",
+        "latestReleaseDate": "2026-08-29",
+        "checkedAt": "2026-08-31"
+      }
+    },
+    {
+      "n": 3,
+      "name": "Runway",
+      "tagline": "first-party hosted MCP server and a documented API",
+      "homepage": "https://runwayml.com",
+      "docs": "https://docs.dev.runwayml.com",
+      "pricing": "https://runwayml.com/pricing",
+      "claudeConnection": "First-party MCP server, run locally from Runway's own repo",
+      "restApi": true,
+      "modelSupport": "Runway's own model family plus third-party models, queryable at runtime via runway_listModels",
+      "freeTier": "unverified",
+      "repo": "runwayml/runway-api-mcp-server",
+      "note": "Checked 2026-08-31: Runway's MCP server is published as source in its own repo and is installed by cloning and building it, not from a hosted endpoint or an npm package.",
+      "quickstart": [
+        {
+          "label": "The MCP server is not published to npm — clone and build it, then install it as a Claude Desktop unpacked extension or point your MCP config at `build/index.js`. Needs a Runway developer API key with billing set up.",
+          "lang": "bash",
+          "code": "git clone https://github.com/runwayml/runway-api-mcp-server\ncd runway-api-mcp-server\nnpm install\nnpm run build"
+        },
+        {
+          "label": "The official SDKs cover the same API without MCP:",
+          "lang": "bash",
+          "code": "npm install @runwayml/sdk   # https://github.com/runwayml/sdk-node\npip install runwayml         # https://github.com/runwayml/sdk-python"
+        }
+      ],
+      "capabilities": {
+        "firstPartyMcp": true,
+        "restApi": true,
+        "timelineEditing": false,
+        "multiShotAssembly": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": 22,
+        "lastPush": "2026-08-17T14:46:35Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-08-31"
+      }
+    },
+    {
+      "n": 4,
+      "name": "fal.ai",
+      "tagline": "hosted MCP over a huge model catalog, model-level calls",
+      "homepage": "https://fal.ai",
+      "docs": "https://docs.fal.ai",
+      "pricing": "https://fal.ai/pricing",
+      "claudeConnection": "First-party hosted MCP server",
+      "restApi": true,
+      "modelSupport": "Large multi-modal catalog (image, video, audio, 3D); browse it live rather than trusting a count",
+      "freeTier": "unverified",
+      "repo": "fal-ai/fal-js",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Official JavaScript client:",
+          "lang": "bash",
+          "code": "npm install --save @fal-ai/client"
+        },
+        {
+          "label": "For Claude, add the hosted MCP endpoint as a custom connector and supply your own fal key:",
+          "lang": "text",
+          "code": "https://mcp.fal.ai"
+        }
+      ],
+      "capabilities": {
+        "firstPartyMcp": true,
+        "restApi": true,
+        "timelineEditing": false,
+        "multiShotAssembly": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": 183,
+        "lastPush": "2026-08-28T22:08:35Z",
+        "latestRelease": "client-v1.10.1",
+        "latestReleaseDate": "2026-05-04",
+        "checkedAt": "2026-08-31"
+      }
+    },
+    {
+      "n": 5,
+      "name": "Replicate",
+      "tagline": "API-first model host, community MCP servers, no editor",
+      "homepage": "https://replicate.com",
+      "docs": "https://replicate.com/docs",
+      "pricing": "https://replicate.com/pricing",
+      "claudeConnection": "Community MCP servers only — no first-party server",
+      "restApi": true,
+      "modelSupport": "Thousands of community and commercial models behind one API",
+      "freeTier": "unverified",
+      "repo": "replicate/replicate-python",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Official clients:",
+          "lang": "bash",
+          "code": "pip install replicate     # https://github.com/replicate/replicate-python\nnpm install replicate     # https://github.com/replicate/replicate-javascript"
+        },
+        {
+          "label": "MCP access is community-maintained, so pick a server deliberately and pin it. There is no Replicate-published MCP server to install.",
+          "lang": "text",
+          "code": "https://replicate.com/docs"
+        }
+      ],
+      "capabilities": {
+        "firstPartyMcp": false,
+        "restApi": true,
+        "timelineEditing": false,
+        "multiShotAssembly": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": 911,
+        "lastPush": "2025-08-26T17:18:17Z",
+        "latestRelease": "1.0.7",
+        "latestReleaseDate": "2025-05-27",
+        "checkedAt": "2026-08-31"
+      }
+    },
+    {
+      "n": 6,
+      "name": "Luma",
+      "tagline": "Dream Machine models with an API and agent tooling",
+      "homepage": "https://lumalabs.ai/dream-machine",
+      "docs": "https://docs.lumalabs.ai",
+      "pricing": "https://lumalabs.ai/dream-machine/api/pricing",
+      "claudeConnection": "Community MCP servers only — no first-party server",
+      "restApi": true,
+      "modelSupport": "Luma's own Dream Machine video and image models",
+      "freeTier": "unverified",
+      "repo": "lumalabs/lumaai-python",
+      "note": null,
+      "quickstart": [
+        {
+          "label": "Official Dream Machine SDKs:",
+          "lang": "bash",
+          "code": "pip install lumaai        # https://github.com/lumalabs/lumaai-python\nnpm install lumaai        # https://github.com/lumalabs/lumaai-node"
+        }
+      ],
+      "capabilities": {
+        "firstPartyMcp": false,
+        "restApi": true,
+        "timelineEditing": false,
+        "multiShotAssembly": false,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": 45,
+        "lastPush": "2026-08-20T05:02:59Z",
+        "latestRelease": "v1.21.0",
+        "latestReleaseDate": "2026-04-07",
+        "checkedAt": "2026-08-31"
+      }
+    }
+  ]
+}
