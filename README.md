@@ -1,6 +1,6 @@
 # Best Claude AI Video Generator Tools (2026)
 
-![Best Claude AI Video Generator Tools (2026)](https://assets.wireflow.ai/linkedin/claude-ai-video-generator-tools/hero.png)
+![Best Claude AI Video Generator Tools (2026)](https://assets.wireflow.ai/linkedin/claude-ai-video-generator-tools/hero.png?v=r5)
 
 A maintained dataset of **claude ai video generator** options: what each one connects to, where it stops, how to run it, and a link to the vendor's own pricing page rather than a price that will be wrong by the time you read it.
 
@@ -10,7 +10,7 @@ The tables below are generated from [`data/tools.json`](data/tools.json). Star c
 Live repository data last checked **2026-08-31** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
-Maintained by [Wireflow](https://www.wireflow.ai). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contents
 
@@ -65,7 +65,7 @@ The score counts how many of the checks in [`data/tools.json`](data/tools.json) 
 
 *Best Overall*
 
-![Wireflow node-based canvas](https://assets.wireflow.ai/competitors/wireflow.png)
+![Wireflow node-based canvas](https://assets.wireflow.ai/competitors/wireflow.png?v=r5)
 
 - **What it is:** [Wireflow](https://www.wireflow.ai/features/ai-video-generation-mcp) is a hosted node-based canvas for AI generation, and its MCP server is why it leads. Connected to Claude, it gives more than a generate button: Claude can list the model catalog, clone a template, create a workflow from a prompt, adjust node settings, run it, and poll the execution for results.
 - **Best for:** teams who want Claude to own the full pipeline, not just the render call
@@ -92,7 +92,7 @@ https://www.wireflow.ai/api/mcp
 
 *MCP connector fronting 30 plus video models, clip generation only*
 
-![Higgsfield homepage](https://assets.wireflow.ai/competitors/higgsfield.png)
+![Higgsfield homepage](https://assets.wireflow.ai/competitors/higgsfield.png?v=r5)
 
 - **What it is:** Higgsfield is a short-form video platform with an MCP connector at mcp.higgsfield.ai, which is what most searches for a Claude AI video generator surface first. Setup is three steps in Claude settings: add a custom connector, paste the URL, sign in.
 - **Limits:** clips are capped at roughly 15 seconds each, so anything longer means generating pieces and assembling them elsewhere. There is no timeline Claude can edit, no node graph for the scripting steps upstream, and no per node cost readout. Credits are priced by model, duration and resolution, which makes a fan-out of variants hard to budget.
@@ -118,7 +118,7 @@ https://mcp.higgsfield.ai
 
 *first-party hosted MCP server and a documented API*
 
-![Runway homepage](https://assets.wireflow.ai/linkedin/claude-ai-video-generator-tools/screenshot-runway.png)
+![Runway homepage](https://assets.wireflow.ai/linkedin/claude-ai-video-generator-tools/screenshot-runway.png?v=r5)
 
 - **What it is:** Runway publishes a first-party MCP server on its own GitHub organization and offers it as a hosted endpoint, so Claude can generate video, images and upscales inside an agent workflow. It works in Claude.ai, Claude Desktop, Claude Code and other clients.
 - **Limits:** the scope is generation and per-asset operations, not pipeline composition. There is no canvas holding the steps between shots, no per node spend visibility, and no batch endpoint for pushing dozens of prompt variants through at once. Multi-shot assembly stays your problem.
@@ -147,7 +147,7 @@ pip install runwayml         # https://github.com/runwayml/sdk-python
 
 *hosted MCP over a huge model catalog, model-level calls*
 
-![fal.ai homepage](https://assets.wireflow.ai/competitors/fal-ai.png)
+![fal.ai homepage](https://assets.wireflow.ai/competitors/fal-ai.png?v=r5)
 
 - **What it is:** fal.ai is an inference host with a hosted MCP server at mcp.fal.ai, connecting Claude to a catalog the company describes as over a thousand models across image, video, audio and 3D. Claude can search the catalog, read model docs and run generations using your own key.
 - **Limits:** fal is deliberately a model layer, not a product layer. There is no timeline, no editor, no canvas, and no per node cost view across a multi-step job. Claude can call twenty models but cannot cut their outputs together, so anything longer than a clip needs your own assembly code and your own storage.
@@ -170,7 +170,7 @@ https://mcp.fal.ai
 
 *API-first model host, community MCP servers, no editor*
 
-![Replicate homepage](https://assets.wireflow.ai/competitors/replicate.png)
+![Replicate homepage](https://assets.wireflow.ai/competitors/replicate.png?v=r5)
 
 - **What it is:** Replicate hosts thousands of community and commercial models behind one predictable API with webhooks, and community MCP servers let Claude call them directly. Predictions are addressable, webhooks fire on completion, and billing is per second of compute rather than a credit pool.
 - **Limits:** as of 2026 the MCP layer is community maintained rather than first party, so quality varies between servers and you carry the upgrade risk. Like fal, Replicate stops at model execution: no canvas, no editor, no multi-step cost view, and no way for Claude to revise an existing cut. Cold starts on less popular video models can stretch a simple request into minutes, which is fine in a batch job and painful in a conversation.
@@ -194,7 +194,7 @@ https://replicate.com/docs
 
 *Dream Machine models with an API and agent tooling*
 
-![Luma Dream Machine homepage](https://assets.wireflow.ai/linkedin/claude-ai-video-generator-tools/screenshot-luma.png)
+![Luma Dream Machine homepage](https://assets.wireflow.ai/linkedin/claude-ai-video-generator-tools/screenshot-luma.png?v=r5)
 
 - **What it is:** Luma makes the Dream Machine video models and now positions its product around creative agents for professionals. It publishes a developer API, and community MCP servers expose that API to Claude, which is how most people wire it up today. Its strength is motion quality and camera control, and image-to-video is a favourite for product shots where you already have a clean still.
 - **Limits:** the Claude connection is community built rather than official, so you inherit whatever the maintainer supports and whatever breaks when the API changes. Generation is the whole scope: no timeline for Claude to edit, no node graph, no batch fan-out, no per node cost visibility.
@@ -290,4 +290,4 @@ Corrections and additions are welcome, including corrections to the entry for th
 
 ---
 
-Maintained by [Wireflow](https://www.wireflow.ai).
+Maintained by [a1adams](https://github.com/a1adams).
