@@ -259,6 +259,46 @@
         "latestReleaseDate": "2026-04-07",
         "checkedAt": "2026-08-31"
       }
+    },
+    {
+      "n": 7,
+      "name": "OrkasVideoStudio",
+      "tagline": "local-first composition and editing toolkit for coding agents",
+      "homepage": "https://github.com/Orkas-AI/Orkas-VideoStudio",
+      "docs": "https://github.com/Orkas-AI/Orkas-VideoStudio#install",
+      "pricing": null,
+      "claudeConnection": "First-party local MCP server and installable agent skills",
+      "restApi": false,
+      "modelSupport": "Provider-agnostic optional generation; zero-key composition and editing",
+      "freeTier": "yes",
+      "repo": "Orkas-AI/Orkas-VideoStudio",
+      "note": "The npm packages are not published yet; install from source. Optional generation uses your own provider keys.",
+      "quickstart": [
+        {
+          "label": "Install from source and verify the local media toolchain:",
+          "lang": "bash",
+          "code": "git clone https://github.com/Orkas-AI/Orkas-VideoStudio.git\ncd Orkas-VideoStudio\npnpm install && pnpm build\nnode packages/cli/dist/index.js doctor"
+        },
+        {
+          "label": "Until the npm package is published, point Claude's MCP configuration at the built local server:",
+          "lang": "text",
+          "code": "node <repo>/packages/mcp/dist/index.js"
+        }
+      ],
+      "capabilities": {
+        "firstPartyMcp": true,
+        "restApi": false,
+        "timelineEditing": true,
+        "multiShotAssembly": true,
+        "costVisibility": false
+      },
+      "live": {
+        "stars": 491,
+        "lastPush": "2026-09-04T12:12:00Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-09-05"
+      }
     }
   ]
 }

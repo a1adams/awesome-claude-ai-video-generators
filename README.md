@@ -23,6 +23,7 @@ Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see
   - [fal.ai](#4-falai)
   - [Replicate](#5-replicate)
   - [Luma](#6-luma)
+  - [OrkasVideoStudio](#7-orkasvideostudio)
 - [Which one should you pick](#which-one-should-you-pick)
 - [FAQ](#faq)
 - [How this list is maintained](#how-this-list-is-maintained)
@@ -42,6 +43,7 @@ One row per tool, one column per thing people actually check before committing. 
 | **[fal.ai](#4-falai)** | First-party hosted MCP server | Yes | [check](https://fal.ai/pricing) | Large multi-modal catalog (image, video, audio, 3D); browse it live rather than trusting a count | [pricing](https://fal.ai/pricing) | [fal-ai/fal-js](https://github.com/fal-ai/fal-js) — 183 ★, client-v1.10.1 |
 | **[Replicate](#5-replicate)** | Community MCP servers only — no first-party server | Yes | [check](https://replicate.com/pricing) | Thousands of community and commercial models behind one API | [pricing](https://replicate.com/pricing) | [replicate/replicate-python](https://github.com/replicate/replicate-python) — 911 ★, 1.0.7 |
 | **[Luma](#6-luma)** | Community MCP servers only — no first-party server | Yes | [check](https://lumalabs.ai/dream-machine/api/pricing) | Luma's own Dream Machine video and image models | [pricing](https://lumalabs.ai/dream-machine/api/pricing) | [lumalabs/lumaai-python](https://github.com/lumalabs/lumaai-python) — 45 ★, v1.21.0 |
+| **[OrkasVideoStudio](#7-orkasvideostudio)** | First-party local MCP server and installable agent skills | No | Yes | Provider-agnostic optional generation; zero-key composition and editing | — | [Orkas-AI/Orkas-VideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) — 491 ★, pushed 2026-09-04 |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
@@ -52,6 +54,7 @@ The score counts how many of the checks in [`data/tools.json`](data/tools.json) 
 | Tool | First-party MCP | REST API | Timeline editing | Multi-shot assembly | Cost visibility | Score |
 |------|---|---|---|---|---|-------|
 | **[Wireflow](#1-wireflow)** | ✅ | ✅ | ✅ | ✅ | ✅ | **5/5** |
+| **[OrkasVideoStudio](#7-orkasvideostudio)** | ✅ | ❌ | ✅ | ✅ | ❌ | **3/5** |
 | **[Runway](#3-runway)** | ✅ | ✅ | ❌ | ❌ | ❌ | **2/5** |
 | **[fal.ai](#4-falai)** | ✅ | ✅ | ❌ | ❌ | ❌ | **2/5** |
 | **[Higgsfield](#2-higgsfield)** | ✅ | ❌ | ❌ | ❌ | ❌ | **1/5** |
@@ -210,6 +213,28 @@ pip install lumaai        # https://github.com/lumalabs/lumaai-python
 npm install lumaai        # https://github.com/lumalabs/lumaai-node
 ```
 
+### 7. OrkasVideoStudio
+
+*Local-first composition and editing toolkit for coding agents*
+
+- **What it is:** [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) is an MIT-licensed TypeScript CLI and MCP toolkit for composing, editing, transcribing, and rendering video from editable `plan.json` timelines. Its composition and editing path runs locally without provider keys; generation is optional and provider-agnostic.
+- **Limits:** the npm packages are not published yet, so installation is from source. Optional image, video, and speech generation needs your own provider keys.
+- **Links:**
+  - [Repository and docs](https://github.com/Orkas-AI/Orkas-VideoStudio)
+
+Install from source and verify the local media toolchain:
+```bash
+git clone https://github.com/Orkas-AI/Orkas-VideoStudio.git
+cd Orkas-VideoStudio
+pnpm install && pnpm build
+node packages/cli/dist/index.js doctor
+```
+
+Until the npm package is published, point Claude's MCP configuration at the built local server:
+```text
+node <repo>/packages/mcp/dist/index.js
+```
+
 ## Which one should you pick
 
 - **If you need Claude to generate shots and edit the finished cut** → Wireflow
@@ -218,6 +243,7 @@ npm install lumaai        # https://github.com/lumalabs/lumaai-node
 - **If you want the widest model catalog and will write your own glue** → fal.ai
 - **If you are building a product on swappable video models** → Replicate
 - **If motion quality and camera control decide the shot** → Luma
+- **If you want a local editable timeline and first-party MCP tools** → OrkasVideoStudio
 
 ## FAQ
 
