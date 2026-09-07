@@ -7,7 +7,7 @@ A maintained dataset of **claude ai video generator** options: what each one con
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-08-31** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-09-07** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
 Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -37,10 +37,10 @@ One row per tool, one column per thing people actually check before committing. 
 | Tool | Claude connection | REST API | Free tier | Model support | Pricing | Open-source SDK / MCP |
 |---|---|---|---|---|---|---|
 | **[Wireflow](#1-wireflow)** | First-party hosted MCP (Streamable HTTP, OAuth) | Yes | Yes | Multi-model catalog across image, video and audio nodes | [pricing](https://www.wireflow.ai/pricing) | — |
-| **[Higgsfield](#2-higgsfield)** | First-party hosted MCP connector, plus an official CLI | No | [check](https://higgsfield.ai/pricing) | 40+ models per the official CLI README | [pricing](https://higgsfield.ai/pricing) | [higgsfield-ai/cli](https://github.com/higgsfield-ai/cli) — 477 ★, v1.1.24 |
+| **[Higgsfield](#2-higgsfield)** | First-party hosted MCP connector, plus an official CLI | No | [check](https://higgsfield.ai/pricing) | 40+ models per the official CLI README | [pricing](https://higgsfield.ai/pricing) | [higgsfield-ai/cli](https://github.com/higgsfield-ai/cli) — 487 ★, v1.1.24 |
 | **[Runway](#3-runway)** | First-party MCP server, run locally from Runway's own repo | Yes | [check](https://runwayml.com/pricing) | Runway's own model family plus third-party models, queryable at runtime via runway_listModels | [pricing](https://runwayml.com/pricing) | [runwayml/runway-api-mcp-server](https://github.com/runwayml/runway-api-mcp-server) — 22 ★, pushed 2026-08-17 |
-| **[fal.ai](#4-falai)** | First-party hosted MCP server | Yes | [check](https://fal.ai/pricing) | Large multi-modal catalog (image, video, audio, 3D); browse it live rather than trusting a count | [pricing](https://fal.ai/pricing) | [fal-ai/fal-js](https://github.com/fal-ai/fal-js) — 183 ★, client-v1.10.1 |
-| **[Replicate](#5-replicate)** | Community MCP servers only — no first-party server | Yes | [check](https://replicate.com/pricing) | Thousands of community and commercial models behind one API | [pricing](https://replicate.com/pricing) | [replicate/replicate-python](https://github.com/replicate/replicate-python) — 911 ★, 1.0.7 |
+| **[fal.ai](#4-falai)** | First-party hosted MCP server | Yes | [check](https://fal.ai/pricing) | Large multi-modal catalog (image, video, audio, 3D); browse it live rather than trusting a count | [pricing](https://fal.ai/pricing) | [fal-ai/fal-js](https://github.com/fal-ai/fal-js) — 184 ★, client-v1.10.1 |
+| **[Replicate](#5-replicate)** | Community MCP servers only — no first-party server | Yes | [check](https://replicate.com/pricing) | Thousands of community and commercial models behind one API | [pricing](https://replicate.com/pricing) | [replicate/replicate-python](https://github.com/replicate/replicate-python) — 912 ★, 1.0.7 |
 | **[Luma](#6-luma)** | Community MCP servers only — no first-party server | Yes | [check](https://lumalabs.ai/dream-machine/api/pricing) | Luma's own Dream Machine video and image models | [pricing](https://lumalabs.ai/dream-machine/api/pricing) | [lumalabs/lumaai-python](https://github.com/lumalabs/lumaai-python) — 45 ★, v1.21.0 |
 <!-- DATA-TABLE:END -->
 
