@@ -1,7 +1,7 @@
 {
   "keyword": "claude ai video generator",
   "title": "Best Claude AI Video Generator Tools (2026)",
-  "lastChecked": "2026-10-05",
+  "lastChecked": "2026-10-12",
   "capabilityChecks": [
     {
       "key": "firstPartyMcp",
@@ -98,11 +98,11 @@
         "costVisibility": false
       },
       "live": {
-        "stars": 636,
+        "stars": 649,
         "lastPush": "2026-09-18T23:39:48Z",
         "latestRelease": "v1.1.26",
         "latestReleaseDate": "2026-09-18",
-        "checkedAt": "2026-10-05"
+        "checkedAt": "2026-10-12"
       }
     },
     {
@@ -142,7 +142,7 @@
         "lastPush": "2026-09-30T20:47:09Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-05"
+        "checkedAt": "2026-10-12"
       }
     },
     {
@@ -178,11 +178,11 @@
         "costVisibility": false
       },
       "live": {
-        "stars": 186,
-        "lastPush": "2026-10-02T20:29:41Z",
+        "stars": 187,
+        "lastPush": "2026-10-12T11:40:24Z",
         "latestRelease": "client-v1.10.1",
         "latestReleaseDate": "2026-05-04",
-        "checkedAt": "2026-10-05"
+        "checkedAt": "2026-10-12"
       }
     },
     {
@@ -222,7 +222,7 @@
         "lastPush": "2025-08-26T17:18:17Z",
         "latestRelease": "1.0.7",
         "latestReleaseDate": "2025-05-27",
-        "checkedAt": "2026-10-05"
+        "checkedAt": "2026-10-12"
       }
     },
     {
@@ -257,7 +257,7 @@
         "lastPush": "2026-08-20T05:02:59Z",
         "latestRelease": "v1.21.0",
         "latestReleaseDate": "2026-04-07",
-        "checkedAt": "2026-10-05"
+        "checkedAt": "2026-10-12"
       }
     }
   ]
